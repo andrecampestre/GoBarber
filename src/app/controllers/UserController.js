@@ -34,6 +34,7 @@ class UserController {
   }
 
   async update(req, res) {
+<<<<<<< HEAD
     const schema = Yup.object().shape({
       name: Yup.string(),
       email: Yup.string().email(),
@@ -76,6 +77,9 @@ class UserController {
       email,
       provider,
     });
+=======
+    return res.json({ ok: 'true' });
+>>>>>>> 31f439a355e03cfad945dfd5ec1af6e84f1e2dcf
   }
 }
 
